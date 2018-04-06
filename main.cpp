@@ -8,11 +8,7 @@ int main()
 
     std::cout << sf::Texture::getMaximumSize() << std::endl;
 
-    // Load a sprite to display
-    sf::Texture texture;
-    if (!texture.loadFromFile("cb.bmp"))
-        return EXIT_FAILURE;
-    sf::Sprite sprite(texture);
+
 
 	// Start the game loop
     while (app.isOpen())
@@ -30,7 +26,6 @@ int main()
         app.clear();
 
         // Draw the sprite
-        app.draw(sprite);
 
         // Update the window
         app.display();
